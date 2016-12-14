@@ -61,47 +61,50 @@ export default {
     //     }]
     //   }
     // }
-    firebase.database().ref('listplay/c').update({
-      SIPAProgramming: [{
-        ep: 'แนะนำคอร์สเรียน',
-        link: '5HoW47BB9ME'
-      }, {
-        ep: 'การเขียนโปรแกรมคอมพิวเตอร์',
-        link: '_AOvS5MdqYM'
-      }, {
-        ep: 'การเขียนโปรแกรมภาษา C',
-        link: 'ZeMV0ZtixNc'
-      }],
-      SIPAProgrammings: [{
-        ep: 'แนะนำคอร์สเรียน',
-        link: '5HoW47BB9ME'
-      }, {
-        ep: 'การเขียนโปรแกรมคอมพิวเตอร์',
-        link: '_AOvS5MdqYM'
-      }, {
-        ep: 'การเขียนโปรแกรมภาษา C',
-        link: 'ZeMV0ZtixNc'
-      }]
-    })
-    firebase.database().ref('listplay/cpp').update({
-      mhacomKone: [{
-        ep: 'UnderstandBasicOfCPP',
-        link: 'HypeKlDqcFo'
-      },
-      {
-        ep: 'coutObject์',
-        link: 'rLD4oQz-wJs'
-      }]
-    })
+    // firebase.database().ref('listplay/c').update({
+    //   SIPAProgramming: [{
+    //     ep: 'แนะนำคอร์สเรียน',
+    //     link: '5HoW47BB9ME'
+    //   }, {
+    //     ep: 'การเขียนโปรแกรมคอมพิวเตอร์',
+    //     link: '_AOvS5MdqYM'
+    //   }, {
+    //     ep: 'การเขียนโปรแกรมภาษา C',
+    //     link: 'ZeMV0ZtixNc'
+    //   }],
+    //   SIPAProgrammings: [{
+    //     ep: 'แนะนำคอร์สเรียน',
+    //     link: '5HoW47BB9ME'
+    //   }, {
+    //     ep: 'การเขียนโปรแกรมคอมพิวเตอร์',
+    //     link: '_AOvS5MdqYM'
+    //   }, {
+    //     ep: 'การเขียนโปรแกรมภาษา C',
+    //     link: 'ZeMV0ZtixNc'
+    //   }]
+    // })
+    // firebase.database().ref('listplay/cpp').update({
+    //   mhacomKone: [{
+    //     ep: 'UnderstandBasicOfCPP',
+    //     link: 'HypeKlDqcFo'
+    //   },
+    //   {
+    //     ep: 'coutObject์',
+    //     link: 'rLD4oQz-wJs'
+    //   }]
+    // })
   },
   data () {
     return {
       link: '',
       listplay: {
-        c: {
+        AngularJs: {
         },
-        cpp: {
-        }
+        C: {
+        },
+        Java: {}
+        // cpp: {
+        // }
       //   c: {
       //     SIPAProgramming: [{
       //       ep: 'แนะนำคอร์สเรียน',

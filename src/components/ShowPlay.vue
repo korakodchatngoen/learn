@@ -1,10 +1,17 @@
 <template>
-  <div class="row">
+  <div style="padding:50px;background-color:#363636">
+  <div class="container">
     <div class="col-md-8">
-      <iframe width="560" height="315" :src="'http://www.youtube.com/embed/'+ link " frameborder="0" allowfullscreen></iframe>
+      <iframe width="750" height="420" :src="'http://www.youtube.com/embed/'+ link " frameborder="0" allowfullscreen></iframe>
     </div>
     <div class="col-md-4" v-for="num in number">
-      <a @click = "list(subject,cr,num-1)">  ตอนที่ {{num}}: {{listplay[subject][cr][num-1].ep}} </a> <br>
+      <div style="padding:10px;border:1px solid #000;background-color:#252525;text-align:left">
+        <a @click = "list(subject,cr,num-1)">
+          <img class="menu" src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/glossy-black-icons-alphanumeric/070841-glossy-black-icon-alphanumeric-letter-c.png" width="60">
+          ตอนที่ {{num}}: {{listplay[subject][cr][num-1].ep}} 
+        </a>
+        <br>
+      </div>
     </div>
     </div>
 </template>
@@ -92,6 +99,7 @@ li {
 }
 
 a {
-  color: #42b983;
+  color: #fff;
 }
+
 </style>
